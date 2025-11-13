@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box +p{
+            color:aqua
+        }
+        a:link{
+            font-size: 12px; font-weight: bold;
+        }
+        #list{
+            color:blueviolet
+        }
+        ul li:nth-child(2), ul li:nth-child(5){
+            color:brown
+        }
+        ul li::first-letter{
+            color:darkgreen; font-size: 30px;
+        }
+        ul li::after{
+            content: " - Read more"; color:coral;
+        }
+        ::marker{
+            color:aqua
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>my name is drishti</p>
+    </div>
+    <P>abes engineering college</P>
+    <a href="">Visit this link</a>
+    <ul id="list">
+        <li>webD</li>
+        <li>DSA</li>
+        <li>Maths</li>
+        <li>electrical</li>
+        <li>Applied</li>
+    </ul>
+</body>
+</html>
