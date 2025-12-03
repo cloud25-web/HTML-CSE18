@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 9</title>
+    <style>
+        html,*{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        h1{
+            padding:10px;
+            text-align: center;
+        }
+        main{
+            width:100%;
+            background-color: rgb(116, 72, 72);
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:10px;
+            padding:20px;
+        }
+        .box{
+            background-color: rgb(254, 254, 254);
+            height:220px;
+            border-radius: 10px;
+            text-align: center;
+            padding:15px;
+            font-weight: bold;
+
+        }
+        .box img{
+            width:100%;
+            height:80px;
+            object-fit: contain;
+            margin-top:10px;
+        }
+        @media screen and (max-width:1024px){
+            main{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media screen and (max-width:600px){
+            main{
+                grid-template-columns: 1fr;
+                padding:30px;
+                gap:15px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Product grid</h1>
+    <main>
+        <div class="box">Product 1<br><img src="imag1.png"><br><br>&#8377;759<br><br>High quality item with great features</div>
+        <div class="box">Product 2<br><img src="imag2.png"><br><br>&#8377;600<br><br>Durable and stylish for daily use</div>
+        <div class="box">Product 3<br><img src="imag3.png"><br><br>&#8377;800<br><br>Lightweight and comfortable</div>
+        <div class="box">Product 4<br><img src="imag4.png"><br><br>&#8377;957<br><br>Trendy design with premium quality</div>
+    </main>
+</body>
+</html>
