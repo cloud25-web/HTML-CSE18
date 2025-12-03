@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        html,*{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+
+        }
+        main{
+            width:100%;
+            height:auto;
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-rows: repeat(1fr,4);
+            gap:10px;
+        }
+        .box{
+            background-color: aqua;
+            height:100px;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </main>
+</body>
+</html>
